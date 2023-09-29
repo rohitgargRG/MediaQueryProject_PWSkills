@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #0e131f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  background-image: url("./media/logo-design-software.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+  margin-left: 30px;
+}
+.header__menu {
+  color: #fff;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+.header__button {
+  width: 120px;
+  height: 30px;
+  background-color: #3a86ff;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border-radius: 10px 10px;
+}
+.header__hamburger {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+.main__text {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3vw;
+}
+.main .text-1 {
+  font-size: 2em;
+  font-family: monospace;
+  font-weight: 700;
+}
+.main .text-2 {
+  font-size: 4em;
+  color: #3a86ff;
+  font-family: monospace;
+  font-weight: 700;
+}
+.main .text-3 {
+  font-size: 1.5em;
+  color: #3a86ff;
+  font-family: monospace;
+  font-weight: 700;
+  margin-top: 2em;
+}
+.main .bankLOGO {
+  height: 100px;
+  background-image: url("./media/banks1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 2em;
+  width: 40vw;
+}
+.main .text-4 {
+  font-size: 1.4em;
+  font-family: monospace;
+  margin-top: 3em;
+}
+.main__img {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .image {
+  width: 45vw;
+  height: 500px;
+  background-image: url("./media/creditCard.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
+}
+
+.InfoSec {
+  background-color: #0a1128;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  gap: 1.2em;
+  width: 100%;
+}
+.InfoSec .common {
+  width: 100%;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+}
+.InfoSec__text-1 {
+  height: 100px;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #390099;
+  margin-top: 30px;
+}
+.InfoSec .closeText {
+  height: 300px;
+}
+.InfoSec__text-2 {
+  margin-top: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background-color: #0e131f;
+  display: flex;
+  font-family: monospace;
+}
+.footer .secCommon {
+  height: 100%;
+  color: #66666e;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-left: 30px;
+  font-size: 1.2em;
+}
+.footer .heading {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 50px;
+  color: #fff;
+}
+.footer__Sec-1 {
+  width: 30%;
+}
+.footer__Sec-2 {
+  width: 20%;
+}
+.footer__Sec-3 {
+  width: 20%;
+}
+.footer__Sec-4 {
+  width: 30%;
+  gap: 1em;
+  color: #fff;
+  padding-left: 30px;
+}
+.footer input {
+  width: 90%;
+  height: 60px;
+  border-radius: 10px 10px;
+}
+.footer button {
+  width: 90%;
+  height: 60px;
+  background-color: #3a86ff;
+  color: white;
+  border-radius: 10px 10px;
+}
+.footer .newsLetter, .footer .Input, .footer .btn {
+  height: 20%;
+}
+.footer .Input {
+  height: 17%;
+}
+.footer .newsLetter {
+  display: flex;
+  font-size: 1.9em;
+  font-weight: 700;
+  margin-left: 7px;
+}
+
+@media (max-width: 638px) {
+  .header {
+    height: 100px;
+    width: 100%;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__hamburger {
+    display: flex;
+    background-image: url("./media/hamburger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+  }
+  .main {
+    flex-direction: column;
+    height: 1100px;
+  }
+  .main__text {
+    width: 100vw;
+    margin-left: 10px;
+  }
+  .main .text-1 {
+    margin-top: 100px;
+  }
+  .main__img {
+    width: 100vw;
+  }
+  .main .image {
+    width: 100vw;
+    margin-top: 50px;
+  }
+  .main .bankLOGO {
+    width: 90vw;
+  }
+  .InfoSec {
+    background-color: #fff;
+    color: black;
+    width: 90%;
+  }
+  .InfoSec .common {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .InfoSec__text-1 {
+    font-size: 10vw;
+  }
+  .InfoSec__text-2 {
+    font-size: 5vw;
+  }
+  .InfoSec__text-3 {
+    font-size: 5vw;
+  }
+  .InfoSec__text-4 {
+    font-size: 5vw;
+  }
+  .footer {
+    height: 700px;
+    flex-direction: column;
+  }
+  .footer .secCommon {
+    width: 100%;
+    gap: 1.2em;
+  }
+  .footer__Sec-1 {
+    height: 100px;
+  }
+  .footer__Sec-2 {
+    height: 200px;
+  }
+  .footer__Sec-3 {
+    height: 200px;
+    display: flex;
+    align-items: start;
+  }
+  .footer__Sec-4 {
+    height: 300px;
+    color: #fff;
+    padding-left: 30px;
+  }
+  .footer input {
+    height: 90%;
+    width: 90%;
+    border-radius: 10px 10px;
+  }
+  .footer button {
+    height: 90%;
+    width: 90%;
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 10px 10px;
+  }
+  .footer .newsLetter, .footer .Input, .footer .btn {
+    width: 300%;
+    height: 60px;
+  }
+  .footer .newsLetter {
+    display: flex;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-left: 0px;
+    height: 40px;
+    padding-top: 5px;
+  }
+  .footer .heading {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=visa_one_card.css.map */

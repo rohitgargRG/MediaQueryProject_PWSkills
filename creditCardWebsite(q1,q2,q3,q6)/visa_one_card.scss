@@ -1,0 +1,340 @@
+$mainColor : #0e131f;
+$InfoColor : #0a1128;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// q1 header section CSS
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        background-image: url('./media/logo-design-software.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70px;
+        width: 70px;
+        margin-left: 30px;
+    }
+    &__menu{
+        color: #fff;
+        display: flex;
+        gap: 40px;
+        font-size: 20px;
+    }
+    &__button{
+        width: 120px;
+        height: 30px;
+        background-color: #3a86ff;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        border-radius: 10px 10px;
+    }
+    &__hamburger{
+        display: none;
+    }
+}
+
+// q2 main section CSS
+.main{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    &__text{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3vw;
+
+    }
+    .text-1{
+        font-size: 2em;
+        font-family: monospace;
+        font-weight: 700;
+    }
+    .text-2{
+        font-size: 4em;
+        color: #3a86ff;
+        font-family: monospace;
+        font-weight: 700;
+    }
+    .text-3{
+        font-size: 1.5em;
+        color: #3a86ff;
+        font-family: monospace;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+    .bankLOGO{
+        height: 100px;
+        background-image: url('./media/banks1.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 2em;
+        width: 40vw;
+    }
+    .text-4{
+        font-size: 1.4em;
+        font-family: monospace;
+        margin-top: 3em;
+    }
+    &__img{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .image{
+        width: 45vw;
+        height: 500px;
+        background-image: url('./media/creditCard.jpeg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 100px;
+    }
+}
+
+// q3 -- Information Section
+
+.InfoSec{
+    background-color: $InfoColor;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    gap: 1.2em;
+    width: 100%;
+    
+    .common{
+        width: 100%;
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+    }
+    &__text-1{
+        height: 100px;
+        font-size: 1.8em;
+        font-weight: 700;
+        color: #390099; 
+        margin-top: 30px; 
+    }
+    .closeText{
+        height: 300px;
+    }
+    &__text-2{  
+        margin-top: 30px;
+    }
+}
+
+// q6 -- footer
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #0e131f;
+    display: flex;
+    font-family: monospace;
+
+    .secCommon{
+        height: 100%;
+        color: #66666e;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        padding-left: 30px;
+        font-size: 1.2em;
+    }
+    .heading{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 50px;
+        color: #fff;
+    }
+    &__Sec-1{
+        width: 30%;
+    }
+    &__Sec-2{
+        width: 20%;
+    }
+    &__Sec-3{
+        width: 20%;
+    }
+    &__Sec-4{
+        width: 30%;
+        gap: 1em;
+        color: #fff;
+        padding-left: 30px;
+    }
+    input{
+        width: 90%;
+        height: 60px;
+        border-radius: 10px 10px;
+    }
+    button{
+        width: 90%;
+        height: 60px;
+        background-color: #3a86ff;
+        color: white;
+        border-radius: 10px 10px;
+    }
+    .newsLetter,.Input,.btn{
+        height: 20%;
+    }
+    .Input{
+        height: 17%;
+    }
+    .newsLetter{
+        display: flex;
+        font-size: 1.9em;
+        font-weight: 700;
+        margin-left: 7px;
+    }
+}
+
+
+
+
+// ******** Media Queries ************
+@media (max-width:638px) {
+    // q1 header section media query
+    .header{
+        height: 100px;
+        width: 100%;
+        &__menu{
+            display: none;
+        }
+        &__button{
+            display: none;
+        }
+        &__hamburger{
+           display: flex;
+           background-image: url('./media/hamburger.png');
+           background-repeat: no-repeat;
+           background-size: cover;
+           width: 70px;
+           height: 70px;
+           margin-right: 30px;
+        }
+    }
+
+    //  q2 main section Media Query 
+    .main{
+        flex-direction: column;
+        height: 1100px;
+        &__text{
+            width: 100vw;
+            margin-left: 10px;  
+        }
+        .text-1{
+            margin-top: 100px;
+        }
+        &__img{
+            width: 100vw;
+        }
+        .image{
+            width: 100vw;
+            margin-top: 50px;
+        }
+        .bankLOGO{
+            width: 90vw;
+        }
+    }
+
+    // q3 -- Information Section
+    .InfoSec{
+        background-color: #fff;
+        color: black;
+        width: 90%;
+        .common{
+            width: 90%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+        }
+        &__text-1{
+            font-size: 10vw;
+        }
+        &__text-2{
+            font-size: 5vw;
+        }
+        &__text-3{
+            font-size: 5vw;
+        }
+        &__text-4{
+            font-size: 5vw;
+        }
+    }
+    // q6 -- footer
+    .footer{
+        height: 700px;
+        flex-direction: column;
+
+        .secCommon{
+            width: 100%;
+            gap: 1.2em;
+        }
+        &__Sec-1{
+            height: 100px;
+        }
+        &__Sec-2{
+            height: 200px;
+        }
+        &__Sec-3{
+            height: 200px;
+            display: flex;
+            align-items: start;
+        }
+        &__Sec-4{
+            height: 300px;
+            color: #fff;
+            padding-left: 30px;
+        }
+        input{
+            height: 90%;
+            width: 90%;
+            border-radius: 10px 10px;
+        }
+        button{
+            height: 90%;
+            width: 90%;
+            background-color: #3a86ff;
+            color: white;
+            border-radius: 10px 10px;
+        }
+        .newsLetter,.Input,.btn{
+            width: 300%;
+            height: 60px;
+        }
+        .newsLetter{
+            display: flex;
+            font-size: 1.9em;
+            font-weight: 700;
+            margin-left: 0px;
+            height: 40px;
+            padding-top: 5px;
+        }
+        .heading{
+            margin-top: 0px;
+        }
+    }
+}
+
+
